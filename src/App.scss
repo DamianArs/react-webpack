@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: black;
+  color: white;
+  height: 70px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  & button {
+    margin-left: 100px;
+    height: 50%;
+  }
+}
+
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate((-50%, -50%));
+  z-index: 100;
+  &::backdrop {
+    backdrop-filter: blur(2px);
+  }
+}
